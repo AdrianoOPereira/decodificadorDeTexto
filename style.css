@@ -1,0 +1,146 @@
+/* Define o estilo global */
+* {
+    background-color: #E5E5E5;
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 48px;
+}
+
+/* Estiliza a logo */
+.logo__alura {
+   margin-left: 10px;
+   width: 10%;
+}
+
+/* Estiliza o main */
+main {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+    margin-left: 20px;
+}
+
+/* Estiliza a área de texto */
+.text__area {
+    border: none;
+    color: blue;
+    margin-top: 50px;
+    text-transform: lowercase;
+    font-size: 20px;
+}
+
+/* Estiliza o placeholder da área de texto */
+::placeholder {
+    color: blue;
+}
+
+/* Remove o outline da área de texto ao focar */
+.textarea:focus {
+    align-self: baseline;   
+    outline: none;
+}
+
+/* Estiliza o contêiner da área de texto para a mensagem */
+.text__area__mensagem__container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    background: white;
+    background-image: url(/imagem/boneco.png);
+    background-repeat: no-repeat;
+    border: none;
+    border-radius: 24px;
+    color: #0a3871;
+    margin-left: 96px;
+    margin-top: 20px;
+    padding-left: 20px;
+    position: relative;
+}
+
+/* Estiliza a área de texto da mensagem */
+.text__area__mensagem {
+    border: none;
+    border-radius: 24px;
+    color: #0a3871;
+    background: transparent;
+    width: 100%;
+    height: auto;
+    padding: 10px;
+    resize: none;
+}
+
+/* Remove o outline da área de texto da mensagem ao focar */
+.text__area__mensagem:focus {
+    outline: none;
+}
+
+/* Estiliza o contêiner dos botões */
+.botoes {
+    display: flex;
+    justify-content: space-around; /* Ajuste para 'space-around' */
+    margin-top: auto;
+    border-radius: 24px;
+    gap: 20px; /* Adiciona espaçamento entre os botões */
+}
+
+/* Estiliza o botão de criptografia */
+.btn__encryptedMessage {
+    background-color: #0A3871;
+    border: 1px solid #0A3871;
+    border-radius: 24px;
+    color: #FFFFFF;
+    cursor: pointer;
+    height:67px;
+    width: 328px;
+    font-size: 20px;
+}
+
+/* Estiliza o botão de descriptografia */
+.btn__decryptedMessage {
+    background-color: #D8DFE8;
+    border: 1px solid #0A3871;
+    border-radius: 24px;
+    color: #0A3871;
+    cursor: pointer;
+    height: 67px;
+    width: 328px;   
+    font-size: 20px;
+}
+
+/* Estiliza o botão de copiar */
+.btn__copiar {
+    background-color: #DEDFE8;
+    border: 1px solid #0A3871;
+    border-radius: 24px;
+    color: #0A3871;
+    cursor: pointer;
+    height: 40px;
+    width: 200px;   
+    margin-top: 10px;
+    margin-right: 10px;
+    font-size: 16px;
+    align-self: center;
+}
+
+/* Estiliza o texto informativo */
+h6 {
+    font-size: 15px;
+    margin: 1px;
+}
+
+
+/*footer {
+    background-color: #0A3871;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    font-size: 14px;
+}
+
+.footer-content p {
+    margin: 2px 0;
+}

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Criptografia com JavaScript</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/crypto-js.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <img class="logo__alura" src="imagem/Logo.png" alt="Logo da alura">
+
+    </header>
+
+
+    <main>
+        <section>
+            <textarea class="text__area" rows="4" cols="41">Digite seu texto</textarea>
+    
+            <div>
+                <h6>Apenas letras minúsculas e sem acento.<h6>
+            </div>
+    
+            <div class="botoes">
+                <button class= "btn__encryptedMessage" onclick="encryptedMessage()">Criptografar</button>
+                <button class= "btn__decryptedMessage" onclick="decryptedMessage()">Descriptografar</button>
+            </div>
+        </section>
+    
+    
+        <section class="text__area__mensagem__container">
+            <textarea class="text__area__mensagem" rows="10" cols="20"></textarea>    
+            <button class="btn__copiar" onclick="copiarTexto()">Copiar</button>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <p>Desenvolvido por Adriano</p>
+            <p>Contato: adriano.oliveirapereira@gmail.com</p>
+            <p>&copy; 2024 Adriano. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+    
+    <script src="app.js"></script>
+</body>
+</html>
+
